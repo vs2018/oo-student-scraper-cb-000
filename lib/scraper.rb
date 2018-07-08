@@ -32,10 +32,10 @@ class Scraper
         if student.attribute("href").value.include?("twitter") 
         result[:twitter] = student.attribute("href").value 
         end
-        if index == 1 
+        if student.attribute("href").value.include?("linkedin")
         result[:linkedin] = student.attribute("href").value 
         end
-        if index == 2 
+        if student.attribute("href").value.include?("github") 
         result[:github] = student.attribute("href").value 
         end
         if index == 3
