@@ -42,7 +42,7 @@ class Scraper
     end
     
     doc.css("div.vitals-text-container").each_with_index do |card, index|
-      card.css("a").each_with_index do |student, index|
+      card.css("div.profile-quote").each_with_index do |student, index|
         if index == 0
         result[:twitter] = student.attribute("href").value
         end
