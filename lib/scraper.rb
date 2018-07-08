@@ -38,6 +38,9 @@ class Scraper
         if index == 2
         result[:github] = student.attribute("href").value
         end
+        if index == 3
+        result[:blog] = student.attribute("href").value
+        end
         
       end
     end
