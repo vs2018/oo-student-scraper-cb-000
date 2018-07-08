@@ -28,7 +28,6 @@ class Scraper
     result = {}
     
     doc.css("div.social-icon-container").each_with_index do |card, index|
-      
       card.css("a").each_with_index do |student, index|
         if index == 0
         result[:twitter] = student.attribute("href").value
@@ -39,11 +38,10 @@ class Scraper
         if index == 2
         result[:github] = student.attribute("href").value
         end
-        
       end
-      
-
     end
+    
+    
     
     binding.pry
   end
