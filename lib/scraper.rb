@@ -31,7 +31,7 @@ class Scraper
       
       card.css("a").each_with_index do |student, index|
         if index == 0
-        result[:twitter] = card.css("a").attribute("href").value
+        result[:twitter] = student.attribute("href").value
         end
        if index == 1
         result[:linkedin] = card.css("a").attribute("href").value
