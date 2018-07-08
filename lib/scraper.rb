@@ -53,7 +53,7 @@ class Scraper
       end
     end
     
-    
+    hash
   end
 
 end
