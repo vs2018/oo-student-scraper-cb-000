@@ -27,9 +27,13 @@ class Scraper
     
     result = {}
     
-    doc.css("div.social-icon-container").each do |card|
-      card.css("")
-      
+    doc.css("div.social-icon-container").each_with_index do |card, index|
+      if index == 0
+        result[:twitter] = card.css("a").attribute("href").value
+      if index == 1
+        result[:twitter] = card.css("a").attribute("href").value
+      if index == 2
+        result[:twitter] = card.css("a").attribute("href").value
       
     end
     
