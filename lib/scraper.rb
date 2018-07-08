@@ -32,7 +32,7 @@ class Scraper
         if index == 0 
         result[:twitter] = student.attribute("href").value 
         end
-       if index == 1 
+        if index == 1 
         result[:linkedin] = student.attribute("href").value 
         end
         if index == 2 
