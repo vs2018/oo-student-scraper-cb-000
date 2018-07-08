@@ -28,7 +28,7 @@ class Scraper
     result = {}
     
     doc.css("div.social-icon-container").each do |card|
-      
+      card.css("")
       
       
     end
