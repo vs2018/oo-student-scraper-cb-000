@@ -29,13 +29,13 @@ class Scraper
     
     doc.css("div.social-icon-container").each_with_index do |card, index|
       card.css("a").each_with_index do |student, index|
-        if index == 0 && student.attribute("href").value.include?("twitter") 
+        if index == 0 && 
         result[:twitter] = student.attribute("href").value 
         end
-       if index == 1 && student.attribute("href").value.include?("linkedin") 
+       if index == 1 && 
         result[:linkedin] = student.attribute("href").value
         end
-        if index == 2 && student.attribute("href").value.include?("github") 
+        if index == 2 && 
         result[:github] = student.attribute("href").value
         end
         if index == 3
