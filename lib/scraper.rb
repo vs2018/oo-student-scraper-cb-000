@@ -43,15 +43,7 @@ class Scraper
     
     doc.css("div.vitals-text-container").each_with_index do |card, index|
       card.css("div.profile-quote").each_with_index do |student, index|
-        if index == 0
-        result[:twitter] = student.attribute("href").value
-        end
-       if index == 1
-        result[:linkedin] = student.attribute("href").value
-        end
-        if index == 2
-        result[:github] = student.attribute("href").value
-        end
+        result[:profile_quote] = student.attribute()
       end
     end
     
