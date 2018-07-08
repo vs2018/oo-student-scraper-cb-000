@@ -43,7 +43,7 @@ class Scraper
     
     doc.css("div.vitals-text-container").each_with_index do |card, index|
       card.css("div.profile-quote").each_with_index do |student, index|
-        result[:profile_quote] = student.attribute()
+        result[:profile_quote] = student.text
       end
     end
     
