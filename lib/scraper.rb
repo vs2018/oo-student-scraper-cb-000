@@ -34,7 +34,6 @@ class Scraper
         result[:linkedin] = card.css("a").attribute("href").value
       if index == 2
         result[:github] = card.css("a").attribute("href").value
-      
     end
     
     binding.pry
