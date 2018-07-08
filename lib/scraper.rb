@@ -37,7 +37,7 @@ class Scraper
         result[:linkedin] = student.attribute("href").value
         end
         if index == 2
-        result[:github] = card.css("a").attribute("href").value
+        result[:github] = student.attribute("href").value
         end
         
       end
