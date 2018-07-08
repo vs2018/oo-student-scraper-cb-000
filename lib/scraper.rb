@@ -27,7 +27,11 @@ class Scraper
     
     result = {}
     
-    doc.css("div.social-icon-container").each do 
+    doc.css("div.social-icon-container").each do |card|
+      
+      
+      
+    end
     
     binding.pry
   end
