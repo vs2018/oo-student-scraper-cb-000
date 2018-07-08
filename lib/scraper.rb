@@ -47,7 +47,7 @@ class Scraper
       end
     end
     
-    doc.css("div.vitals-text-container").each_with_index do |card, index|
+    doc.css("div.description-holder").each_with_index do |card, index|
       card.css("div.profile-quote").each_with_index do |student, index|
         result[:profile_quote] = student.text
       end
